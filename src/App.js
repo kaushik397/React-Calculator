@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import "./App.css"
+
 const App = () =>{
     const[result,setResult]=useState("");
     const openInNewTab = (url) => {
@@ -60,8 +61,8 @@ const App = () =>{
     
 </div>
 <div>
-    <h2> Hello! Their</h2>
-    <h3> This is a simple Calculator Page its an open-source project</h3>
+    <h1> Hello! Their</h1>
+    <h2> This is a simple Calculator Page its an open-source project</h2>
     <button onClick={() => openInNewTab('https://github.com/kaushik397/React-Calculator')}>View Git Repo</button>
 </div>
         </>

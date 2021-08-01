@@ -10,6 +10,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/calculator.png);
+    background-color: rgb(255, 215, 128);
 }
 .contaier{
 top: 50%;
@@ -23,6 +25,7 @@ text-align: center;
 border: 8px solid #383333;
 background: #f0e9e9;
 border-radius: 10px;
+/* background-image: url(./images/calculator.png); */
 }
 .keyPad{
 display: grid;
