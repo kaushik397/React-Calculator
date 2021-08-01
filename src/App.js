@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 import "./App.css"
 const App = () =>{
     const[result,setResult]=useState("");
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+      }
     const handClick =(e)=>{
         console.log("Clicked");
        //console.log(e)
@@ -53,6 +57,12 @@ const App = () =>{
         <button  name="."onClick={handClick}>.</button>
         <button className="highlight" onClick={calculate}id ="result">result</button>
     </div>
+    
+</div>
+<div>
+    <h2> Hello! Their</h2>
+    <h3> This is a simple Calculator Page its an open-source project</h3>
+    <button onClick={() => openInNewTab('https://github.com/kaushik397/React-Calculator')}>View Git Repo</button>
 </div>
         </>
     )
